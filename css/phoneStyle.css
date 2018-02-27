@@ -1,0 +1,512 @@
+*{
+    font-size: 17px;
+    text-decoration: none;
+    list-style: none;
+}
+.Pback{
+    background-image: url("../img/PhonImg/back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.top{
+    width: 100%;
+    margin-top: 45px;
+    float: left;
+}
+.leftTitle{
+    width: 60%;
+    float: left;
+}
+.leftTitle img{
+    width: 110%;
+    margin-left: -18%;
+}
+.rightAnimal{
+    width: 40%;
+    float: right;
+}
+.rightAnimal img{
+    width: 99%;
+    margin-left: -10%;
+    margin-top: 17px;
+}
+.Ptitle{
+    float: left;
+    width: 100%;
+    height: 160px;
+    background-image: url("../img/PhonImg/titleBack.png");
+    background-size: 100%;
+    float: left;
+    background-repeat: no-repeat;
+    margin-top: -110px;
+    background-color: rgba(255, 255, 255, 0.78);
+}
+.nav-tabs{
+    border-bottom:none;
+}
+.tabBox{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.tabBox li{
+    width: 25%;
+    text-align: center;
+}
+.tabBox li a p{
+    color: #d3a15c;
+}
+.tabBox li a p:first-child{
+    color: #bf7a15;
+    font-size: 26px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    border: none;
+
+    padding-bottom: 0;
+    border-radius: 13px;
+    margin-top: 7px;
+}
+.textBox{
+    width: 100%;
+    padding: 30px;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+    background-image: url("../img/page2Next.png");
+    transform:rotate(90deg);
+    background-size: cover;
+    width: 104px;
+    height: 60px;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+    background-image: url("../img/page2Next.png");
+    transform:rotate(-90deg);
+    background-size: cover;
+    width: 104px;
+    height: 60px;
+}
+.scrollBox img{
+    width: 55%;
+}
+.scrollBox{
+    float: left;
+    width: 100%;
+}
+.BorntextBox{
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+    padding: 0 20px 20px 20px;
+}
+.BorntextBox p{
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-indent: 52px;
+    line-height: 44px;
+    color: #333;
+}
+.cortoonBox{
+    width: 100%;
+    float: left;
+    padding: 30px;
+}
+.cortoonBox ul {
+    width: 100%;
+}
+.cortoonBox ul li{
+    width: 50%;
+    float: left;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+.cortoonBox ul li img{
+    width: 96%;
+}
+.CortoonTitle{
+    position: absolute;
+    top: 30px;
+    width: 90%;
+}
+.CortoonTitle i{
+    display: block;
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/hua-2.png);
+    background-size: 30px;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+.CortoonTitle h4{
+    font-weight: bolder;
+    text-indent: 20px;
+    float: right;
+}
+.BorntextBox h3{
+    color: #bf7a15;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.newsAnimal img{
+    width: 144%;
+    margin-left: -45%;
+}
+.newTab li{
+    width: 33.3%;
+}
+.joinTab li{
+    width: 33.3%;
+}
+.newTab li a p{
+    color: #75b4bb;
+}
+.newTab li a p:first-child{
+    color: #519b9e;
+}
+.newsGiles{
+    width: 100%;
+    padding: 40px;
+    border-radius: 40px;
+    height: 450px;
+    background-image: url("../img/PhonImg/newGilrs.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+}
+.BorntextBox h4{
+    font-size: 30px;
+    font-weight: bolder;
+    text-indent: 52px;
+    float: left;
+}
+.titleBox{
+    width: 100%;
+    display: table;
+    margin-top: 30px;
+}
+.titleBox i{
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+    background-image: url("../img/hua-2.png");
+    display: block;
+    float: left;
+}
+.aboutTab li a p{
+    color: #e7b3bf;
+}
+.aboutTab li a p:first-child{
+    color: #c14b6b;
+}
+.aboutHua{
+    width: 100%;
+    float: left;
+    margin-top: -150px;
+    text-align: center;
+}
+.aboutHua img{
+    width: 70%;
+}
+.aboutTitleImg{
+    width: 100%;
+    float: left;
+    background-image: url("../img/aboutUsTilebig.png");
+    background-size: 100%;
+    height: 160px;
+    margin-top: -100px;
+}
+.BorntextBox h2{
+    font-size: 30px;
+    color: #c14b6b;
+    margin-top: -27px;
+    margin-bottom: 29px;
+}
+#Join-table{
+    width: 100%;
+    text-align: center;
+    margin-top: -80px;
+}
+#Join-table thead tr td{
+    color: #744d24;
+    font-size: 30px;
+    font-weight: bolder;
+}
+#Join-table thead tr{
+    height: 80px;
+    background: linear-gradient(to right, #fbdfad , #fff0ad,#fbdfad);
+}
+#Join-table tbody tr{
+    height: 60px;
+    border-bottom: 1px solid #fce3ad;
+    box-shadow: 0px 0px 3px #fce3ad;
+}
+#Join-table tbody tr td{
+    font-size: 26px;
+    color: #8e6339;
+}
+.rightLeftBox{
+    float: left;
+    margin: 50px 0 30px 50px;
+}
+.rightLeftBox i{
+    width: 70px;
+    height: 70px;
+    display: block;
+    background-image: url("../img/contactUs.png");
+    background-size: 70px;
+    float: left;
+}
+.rightLeftBox div{
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+}
+.rightLeftBox div p{
+    color: #a26201;
+    font-size: 16px;
+}
+.rightLeftBox div p:first-child{
+    font-size: 26px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    margin-top: 4px;
+}
+#leftNav{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    left: 50%;
+    margin-left: -40%;
+    margin-top: 30px;
+}
+#leftNav ul li{
+    width: 25px;
+    height: 25px;
+    float: left;
+    border-radius: 50%;
+    border: 1px solid #936f4b;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+    color: #936f4b;
+    position: relative;
+    z-index: 2;
+}
+#leftNav .Lihover{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: #f9c002;
+}
+#leftNav ul span{
+    width: 30px;
+    height: 1px;
+    background-color: #a66010;
+    display: block;
+    float: left;
+    margin: 13px 3px;
+}
+#leftNav ul{
+    float: left;
+    display: table;
+    position: relative;
+    margin: 10px 25px;
+}
+.leftNav a{
+    margin-top: 10px;
+    float: left;
+    border: 1px solid #936f4b;
+    padding: 3px 15px;
+    background-color: #fff;
+    border-radius: 20px 20px;
+    color: #936f4b;
+    text-decoration: none;
+}
+.contactTab li{
+    width: 50%;
+}
+.contactTab li a p:first-child{
+    color: #764c24;
+}
+.contactTab li a p{
+    color: #c0ad9c;
+}
+.Servertitle{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.sevText{
+    margin-top: 20px;
+}
+.sevText p{
+    text-indent: 0px;
+    padding: 0 40px;
+}
+.messageText{
+    width: 100%;
+    padding: 10px 40px;
+}
+.messageBox{
+    width: 100%;
+    height: 300px;
+    border: 1px solid #e5cd9f;
+    background-color: #fef8d4;
+    resize: none;
+    border-radius: 20px;
+}
+.productAnimal img{
+    width: 105%;
+    margin-left: -16%;
+}
+.productTab li{
+    width: 33.3%;
+}
+.productTab li a p{
+    color: #93a14a;
+}
+.productTab li a p:first-child{
+    color: #647800;
+}
+.productText{
+    width: 100%;
+    border: 1px solid #c6d4a1;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: -56px;
+}
+.productText img{
+    width: 80%;
+}
+.productDes{
+    text-align: left;
+    color: #333;
+    padding: 0 30px 16px;
+
+}
+.productScroll{
+    margin: 0 auto;
+    width: 90%;
+    padding: 0px 30px;
+    position: relative;
+}
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+.swiper-slide-active{
+    border: 1px solid #c5d5a8;
+    border-radius: 20px 20px;
+}
+.swiper-pagination-bullet{
+    width: 20%;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 0;
+}
+.swiper-pagination-bullet-active{
+    width: 20%;
+    height: 20px;
+    background-image: url("../img/scrollCenter.png");
+    background-color: transparent;
+    border-radius: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.productScroll img{
+    width: 80%;
+}
+.scrollBtnBox{
+    float: left;
+    width: 100%;
+    margin-bottom: 700px;
+}
+.scrollbtnmain{
+    width: 90%;
+    margin: 0 auto;
+    height: 20px;
+    position: relative;
+    border: 1px solid #b3be82;
+    border-radius: 20px 20px;
+    background-color: rgba(255, 255, 255, 0.71);
+}
+.scrollbtnmain i{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-size: 19px;
+    background-repeat: no-repeat;
+    background-image: url("../img/scrollLeft.png");
+}
+.leftIcon{
+    float: left;
+}
+.rightIcon{
+    float: right;
+    transform: rotate(180deg);
+}
+.swiper-pagination{
+    width: 100%;
+}
+.tableBtnBox{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 400px;
+    color: #8e6339;
+}
+.tableBtnBox a{
+    background-color: #fff;
+    border: 1px solid #8e6339;
+    padding: 5px 50px;
+    border-radius: 20px 20px;
+    font-size: 40px;
+    color: #8e6339;
+    margin: 0 43px;
+}
+.tableBtnBox a:hover{
+    text-decoration: none;
+}
+.btnBox{
+    position: absolute;
+    width: 120%;
+    bottom: 14%;
+    left: -10%;
+}

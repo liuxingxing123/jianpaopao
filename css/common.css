@@ -1,0 +1,859 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 12px;
+    color: #333;
+}
+a:hover{
+    text-decoration: none;
+}
+.sendMessage:hover{
+    color: #333;
+}
+.abouttextA:hover{
+    color: #fff;
+}
+.bodyback{
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-color: #f9c33c;
+}
+.back1{
+    background-image: url("../img/xihapaopaoBack.png");
+}
+.back2{
+    background-image: url("../img/produBack.png");
+}
+.top{
+    width: 100%;
+    height: 70px;
+    background-image: url("../img/topback2.png");
+    background-size: 100%;
+    border-bottom: 2px solid #f39c00;
+    position: fixed;
+    z-index: 99999;
+}
+
+.top ul:first-child{
+    display: table;
+    margin: 0 auto;
+}
+.top ul:first-child li{
+    float: left;
+    padding: 36px 0px 20px 0px;
+    cursor: pointer;
+    width: 124px;
+}
+.top ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #803305;
+    transition: all 0.4s;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: -4px;
+}
+.logo img{
+    width: 150px;
+}
+.topContent i{
+    display: block;
+    width: 20px;
+    float: left;
+}
+.topContent a{
+    display: inline-block;
+}
+.topHover a:first-child{
+    transition: all 0.4s;
+    background-color: #fff6d5;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.topHover i{
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: right;
+    background-image: url("../img/drown.png");
+    background-size: 20px;
+}
+.contentBox{
+    position: relative;
+    top: 160px;
+}
+.Boxstyle{
+    border: 1px solid #d5b489;
+    background-color: #feffef;
+    float: right;
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+}
+.xihaBoxstyle{
+    border: none;
+}
+.title2Img{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.nav-tabs>li{
+    width: 100%;
+    margin: 5px 0px;
+}
+#myTab i{
+    width: 50px;
+    height: 50px;
+    display: block;
+    float: left;
+    background-size: 50px;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+#myTab div{
+    padding-left: 80px;
+    text-align: left;
+}
+#myTab span{
+    text-align: center;
+}
+.listIconOne{
+    background-image: url("../img/1.png");
+}
+.listIconTow{
+    background-image: url("../img/2.png");
+}
+.listIconThree{
+    background-image: url("../img/3.png");
+}
+.listIconFore{
+    background-image: url("../img/4.png");
+}
+#myTab div  p:first-child{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #764c24;
+    margin-bottom: 0px;
+}
+#myTab div p{
+    color: #c2ae93;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    background-image: url("../img/joinUsChouse.png");
+    background-size: 100% 99%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -5px;
+}
+.rightTitle{
+    float: right;
+}
+.rightTitle i{
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    background-color: #fbca03;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.title3{
+    float: right;
+    background-color: #fbca03;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 24px;
+    padding: 0 40px 0 0;
+    font-weight: 500;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    margin-top: 10px;
+}
+.animalList{
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.animalList img{
+    height: 160px;
+    margin: 0 10px;
+}
+.animalText{
+    float: left;
+    width: 100%;
+    padding: 30px;
+    text-align: left;
+    padding-top: 0px;
+}
+.animalText p{
+    color: #333;
+    padding-bottom: 20px;
+    text-indent : 20px;
+    line-height: 21px;
+}
+.leftBottom{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.nav-tabs{
+    border: none;
+}
+.leftBox{
+    background-image: url("../img/joinUsback.png");
+    overflow: hidden;
+    background-position: -270px 500px;
+    background-repeat: no-repeat;
+}
+.leftBottom img{
+    width: 80%;
+    margin-left: 20px;
+}
+.Contentbottom{
+    width: 700px;
+    margin: 200px auto;
+    height: 100px;
+    margin-bottom: 100px;
+}
+.bottomTitle{
+    text-align: center;
+}
+.bottomTitle img {
+    height: 40px;
+    margin-bottom: 15px;
+}
+.bottomTitle a{
+    border: 1px solid #603814;
+    padding: 1px 10px;
+    background-color: #feeeba;
+    border-radius: 20px 20px;
+    color: #603814;
+    text-decoration: none;
+}
+.bottomBox{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: #1e1e1e;
+    text-align: center;
+    z-index: 9;
+}
+.animalText div{
+    float: left;
+    width: 100%;
+}
+.cartoonBox{
+    display: none;
+}
+.animalText div img{
+    width: 20%;
+    float: right;
+    margin-top: -28px;
+    cursor: pointer;
+}
+.animalText div p{
+    float: left;
+    width: 77%;
+}
+.animalText div h4{
+    cursor: pointer;
+    font-weight: bolder;
+    text-indent: 20px;
+    float: left;
+}
+.animalText div i{
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/hua-2.png");
+    background-size: 30px;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+.cartoonBox img{
+    width: 96%;
+}
+.cartoonBox ul li{
+    float: left;
+    width: 50%;
+    position: relative;
+}
+.cartoonBox ul li div{
+    position: absolute;
+    top:30px;
+    width: 90%;
+}
+.cartoonBox ul li div h4{
+    float: right;
+}
+.cartoonBox ul li div i{
+    float: right;
+}
+#leftNav{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    left: 50%;
+    margin-left: -40%;
+    margin-top: 30px;
+}
+#leftNav ul li{
+    width: 25px;
+    height: 25px;
+    float: left;
+    border-radius: 50%;
+    border: 1px solid #936f4b;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+    color: #936f4b;
+    position: relative;
+    z-index: 2;
+}
+#leftNav .Lihover{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: #f9c002;
+}
+#leftNav ul span{
+    width: 30px;
+    height: 1px;
+    background-color: #a66010;
+    display: block;
+    float: left;
+    margin: 13px 3px;
+}
+.cartoonUl{
+    display: table;
+}
+#leftNav ul{
+    float: left;
+    display: table;
+    position: relative;
+    margin: 10px 25px;
+}
+.leftNav a{
+    margin-top: 10px;
+    float: left;
+    border: 1px solid #936f4b;
+    padding: 3px 15px;
+    background-color: #fff;
+    border-radius: 20px 20px;
+    color: #936f4b;
+    text-decoration: none;
+}
+#demo-table{
+    width: 100%;
+    text-align: center;
+}
+#demo-table thead tr td{
+    color: #744d24;
+    font-size: 16px;
+    font-weight: bolder;
+}
+#demo-table thead tr{
+    height: 50px;
+}
+#demo-table tbody tr{
+    height: 40px;
+    border-bottom: 1px solid #fce3ad;
+    box-shadow: 0px 0px 3px #fce3ad;
+}
+.rightLeftBox{
+    float: left;
+    margin: 50px 0 10px 50px;
+}
+.rightLeftBox i{
+    width: 70px;
+    height: 70px;
+    display: block;
+    background-image: url("../img/contactUs.png");
+    background-size: 70px;
+    float: left;
+}
+.rightLeftBox div{
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+}
+.rightLeftBox div p{
+    color: #a26201;
+    font-size: 16px;
+}
+.rightLeftBox div p:first-child{
+    font-size: 26px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    margin-top: 4px;
+}
+.contactInfor{
+    margin: 15px 0px;
+}
+.contactInfor p{
+    text-align: left;
+    margin-bottom: 0px;
+}
+.contactBox{
+    padding: 10px 50px;
+    float: left;
+    width: 100%;
+}
+.contactInfor div{
+    padding-left: 0px;
+}
+.messageBox{
+    width: 100%;
+    height: 200px;
+}
+.messageArea{
+    width: 100%;
+    resize: none;
+    height: 100%;
+    border: 1px solid #e5cd9f;
+    background-color: #fef8d4;
+}
+.sendMessage{
+    float: right;
+    padding: 6px 30px;
+    background-color: #ffd241;
+    color: #333;
+    margin-top: 20px;
+    text-decoration: none;
+    letter-spacing: 4px;
+}
+.contactLeft img{
+    width: 120%;
+    margin-left: -80px;
+}
+.Boxstyle2{
+    border: 1px solid #e5b0ba;
+    background-color: #fdefee;
+    float: right;
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+}
+.leftBox2{
+    background-image: url(../img/anoutUsback.png);
+    overflow: hidden;
+    background-position: -270px 500px;
+    background-repeat: no-repeat;
+}
+.aboutRightTitle i{
+    background-color: #eaacaf;
+}
+.aboutTitle{
+    background-color: #eaacaf;
+}
+.aboutUsImg{
+    width: 100%;
+    text-align: center;
+    float: left;
+    margin-top: -100px;
+}
+.aboutUsImg img{
+    width: 50%;
+    margin-top: 20px;
+}
+.aboutUsT{
+    width: 100%;
+    text-align: center;
+    float: left;
+    margin-top: -70px;
+}
+.aboutUsT img{
+    width: 90%;
+}
+.abouttextA{
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    color: #fff;
+    background-color: #e7a7b8;
+    padding: 5px 20px;
+    border-radius: 20px 20px;
+}
+#aboutText{
+    width: 60%;
+    float: left;
+}
+.aboutTextBox{
+    padding: 30px 20px 30px 0px;
+}
+.aboutImgBox{
+    display: block;
+    width: 40%;
+    border-radius: 20px;
+    border: 1px solid #d08b9e;
+    background-image: url("../img/aboutUsImg.png");
+    height: 200px;
+    float: right;
+    margin-top: 20px;
+}
+.Boxstyle3{
+    border: 1px solid #8dbec3;
+    background-color: #f2f8ee;
+    float: right;
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+}
+.Boxstyle4{
+    border: 1px solid #9eb668;
+    background-color: #f1f7eb;
+    float: right;
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+}
+.leftBox3{
+    background-image: url("../img/newsBack-2.png");
+    overflow: hidden;
+    background-position: -270px 300px;
+    background-repeat: no-repeat;
+}
+.newLeftBottom img{
+    width: 120%;
+    margin-left: -20px;
+}
+.joinUsLeftBox{
+    background-position: -270px 300px;
+}
+.contactLeftBox{
+    background-position: -270px 250px;
+}
+.newRightTitle i ,.newTitle{
+    background-color: #59a4b7;
+}
+.newRightTitleH3{
+    width: 100%;
+    float: left;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.newRightTitleImg{
+    width: 100%;
+    float: left;
+    padding: 30px;
+    overflow: hidden;
+}
+.newRightTitleImgBack{
+    width: 100%;
+}
+.newText{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.newText div p{
+    width: 100%;
+}
+.producRightTitle i ,.producTitle{
+    background-color: #adb93b;
+}
+.producTextBox{
+    width: 90%;
+    margin: 20px auto;
+    height: 466px;
+    background-image: url("../img/produImg1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 1px solid #c5d5a8;
+    background-color: #fbfdfa;
+    border-radius: 20px;
+    background-position: center;
+    margin-bottom: 0px;
+}
+.productText{
+    width: 30%;
+    float: right;
+    margin-top: 313px;
+    margin-right: -130px;
+    line-height: 21px;
+    text-indent: 24px;
+}
+.productScroll{
+    float: left;
+    width: 90%;
+    padding: 0 30px;
+    margin-left: 5%;
+}
+.swiper-container {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+.swiper-slide-active{
+    border: 1px solid #c5d5a8;
+    border-radius: 20px 20px;
+}
+.swiper-pagination-bullet{
+    width: 20%;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 0;
+}
+.swiper-pagination-bullet-active{
+    width: 20%;
+    height: 20px;
+    background-image: url("../img/scrollCenter.png");
+    background-color: transparent;
+    border-radius: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.productScroll img{
+    width: 80%;
+}
+.scrollBtnBox{
+    float: left;
+    width: 100%;
+    margin-top: -42px;
+}
+.scrollbtnmain{
+    width: 90%;
+    margin: 0 auto;
+    height: 20px;
+    position: relative;
+    border: 1px solid #b3be82;
+    border-radius: 20px 20px;
+}
+.scrollbtnmain i{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-size: 19px;
+    background-repeat: no-repeat;
+    background-image: url("../img/scrollLeft.png");
+}
+.leftIcon{
+    float: left;
+}
+.rightIcon{
+    float: right;
+    transform: rotate(180deg);
+}
+.swiper-pagination{
+
+    width: 100%;
+
+}
+.top{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+    background-image: url("../img/topback.png");
+    background-size: cover;
+    border-bottom: 2px solid #f5a900;
+    background-position: center;
+}
+.top ul{
+    display: table;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.logoLi{
+    margin-top: -10px;
+}
+.logoLi img{
+    width: 170px;
+}
+.top ul li{
+    float: left;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.top ul li a{
+    font-size: 16px;
+}
+.top ul li:hover{
+    font-size: 16px;
+    font-weight: bolder;
+    transition: all 0.4s;
+}
+#indexTop a{
+    margin-top: 0px;
+}
+.menu{
+    position: relative;
+}
+.top ul li:hover a{
+    font-size: 20px;
+}
+.xihahaD:hover .xihaha{
+    display: block;
+}
+.productD:hover .product{
+    display: block;
+}
+.newsD:hover .news{
+    display: block;
+}
+.contactD:hover .contact{
+    display: block;
+}
+.aboutD:hover .about{
+    display: block;
+}
+.joinD:hover .join{
+    display: block;
+}
+.menu_bd{
+    display: none;
+    position: absolute;
+    left: 0;
+    padding: 8px 10px;
+    background-color: #fff6d5;
+    text-align: center;
+    width: 124px;
+}
+.drdEngl{
+    font-size: 10px;
+}
+.dropDown a{
+    width: 100%;
+    background-color: #fefae6;
+    padding: 10px 5px;
+}
+.menu_bd a p{
+    color: #e7d0ae;
+}
+.menu_bd a:hover p:first-child{
+    color: #813d18;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.menu_bd a p:first-child{
+    font-size: 16px;
+    font-weight: bolder;
+    color: #c59d6c;
+    margin-bottom: 4px;
+}
+.btnBox{
+    position: absolute;
+    width: 100%;
+    bottom: 24%;
+    left: 0%;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+    background-image: url("../img/page2Next.png");
+    transform:rotate(90deg);
+    background-size: cover;
+    width: 104px;
+    height: 60px;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+    background-image: url("../img/page2Next.png");
+    transform:rotate(-90deg);
+    background-size: cover;
+    width: 104px;
+    height: 60px;
+}
+.RighttextBox{
+    height: 731px;
+    overflow: hidden;
+    border: 1px solid #8dbec3;
+    background-color: #f2f8ee;
+    float: right;
+    border-radius: 16px;
+    width: 75%;
+}
+.newscrollBox{
+    width: 98%;
+    height: 95%;
+    overflow: auto;
+    margin-top: 2%;
+}
+.xihaRightBox{
+    border: 1px solid #d5b489;
+    background-color: #feffef;
+    float: right;
+    border-radius: 16px;
+    width: 75%;
+    height: 815px;
+    overflow: hidden;
+}
+#demo-table{
+    position: relative;
+    background-size: 100%;
+    background-image: url(../img/joinUsTitle2.png);
+    background-position-y: -5px;
+    background-repeat: no-repeat;
+}
+.cartoonBox{
+    width: 100%;
+    height: 100%;
+    padding: 5px 20px;
+}
+.carttonTitle h4{
+    float: left;
+    font-weight: bolder;
+    text-indent: 20px;
+    color: #333;
+}
+.carttonTitle a{
+    display: table;
+    background: linear-gradient(to right, #f7bb3e , #feeeb0,#f7bb3e);
+    padding: 0 20px;
+    border-radius: 20px;
+}
+.carttonTitle i{
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/hua-2.png");
+    background-size: 40px;
+}
+.cartoonBox p{
+    padding: 20px 0;
+    text-indent: 20px;
+    line-height: 21px;
+}
+.cartoonText{
+    width: 100%;
+    text-align: center;
+}
+.cartoonText img{
+    width: 45%;
+    padding: 10px;
+}
+.nextCartoon{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+.nextCartoon img{
+    width: 10%;
+}
+.carttonTitle{
+    margin-top: 60px;
+}

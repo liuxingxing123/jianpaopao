@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <!--让ie有效果，ie的兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--获取当前设备的宽度，根据当前设备的宽度来以1:1的缩放比-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <title>简泡泡</title>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <!-- jquery.easings.min.js 是必须的，用于 easing 参数，也可以使用完整的 jQuery UI 代替 -->
+    <script src="js/jquery.easings.min.js"></script>
+
+    <!-- 如果 scrollOverflow 设置为 true，则需要引入 jquery.slimscroll.min.js，一般情况下不需要 -->
+    <script src="js/scrolloverflow.min.js"></script>
+    <script src="js/swiper-3.4.2.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script>
+        $(function(){
+            $('#fullpage').fullpage({
+                verticalCentered: false,
+                slidesNavigation:true,
+//                navigation: true,
+                anchors:['index','one','tow','three','four','five','six'],
+                menu:'#myMenu',
+                onLeave:function(index,nextIndex,direction) { //滚动之前的页面序号，滚动后的页面序号，滚动的方向。滚动前先返回数据
+                    if (nextIndex == 1) {
+                        $('.upBtn').hide();
+                        $('.nextBottm').hide();
+                    }else{
+                        $('.upBtn').show();
+                        $('.nextBottm').show();
+                    }if(nextIndex==7){
+                        $('.nextBottm').hide();
+                    }
+                    var topL=$('.indexleftNav ul li').eq(nextIndex-2).position().top;
+                    $('.Lihover').animate({
+                        top:topL+1
+                    },500);
+                }
+            });
+        });
+    </script>
+    <style>
+        .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+            background-image: none;
+            /*background: linear-gradient(to right, rgb(238, 245, 227) 21%, rgba(203, 205, 123, 0),rgba(181, 192, 66, 0));*/
+            width: 220px;
+            height: 270px;
+            margin-top: -245px;
+            left: -5px;
+            text-align: center;
+            line-height: 200px;
+            border-radius: 50%;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+            transform: rotate(0);
+        }
+        .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+            background-image: none;
+            /*background: linear-gradient(to right,rgba(181, 192, 66, 0), rgba(203, 205, 123, 0), rgb(238, 245, 227) 92%);*/
+            width: 220px;
+            height: 270px;
+            margin-top: -235px;
+            right: -5px;
+            text-align: center;
+            line-height: 200px;
+            border-radius: 50%;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+            transform: rotate(0);
+        }
+        .swiper-slide{
+            height: 116%;
+        }
+
+    </style>
+</head>
+<body>
+<div class="top">
+    <div class="topContent">
+        <ul id="indexTop">
+            <li>
+                <div class="menu xihahaD">
+                    <a href="xihapaopao.html">嘻哈泡泡<i></i></a>
+                    <div class="menu_bd xihaha">
+                        <div>
+                            <a>
+                                <p>诞生历程</p>
+                                <p class="drdEngl">The birth process</p>
+                            </a>
+                            <a>
+                                <p>形象故事</p>
+                                <p class="drdEngl">Image story</p>
+                            </a>
+                            <a>
+                                <p>动漫SHOW</p>
+                                <p class="drdEngl">Anime show</p>
+                            </a>
+                            <a>
+                                <p>表情包下载</p>
+                                <p class="drdEngl">Expression package Download</p>
+                                <p class="drdEngl"></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="menu productD">
+                    <a href="product.html">产品中心<i></i></a>
+                    <div class="menu_bd product">
+                        <div>
+                            <a>
+                                <p>产品介绍</p>
+                                <p class="drdEngl">product description</p>
+                            </a>
+                            <a>
+                                <p>分类展示</p>
+                                <p class="drdEngl">Classified Dispaly</p>
+                            </a>
+                            <a>
+                                <p>合作定制</p>
+                                <p class="drdEngl">Cooperation Customization</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="menu newsD">
+                    <a href="news.html">新闻中心<i></i></a>
+                    <div class="menu_bd news">
+                        <div>
+                            <a>
+                                <p>媒体报道</p>
+                                <p class="drdEngl">Media Reports</p>
+                            </a>
+                            <a>
+                                <p>行业资讯</p>
+                                <p class="drdEngl">Industry Information</p>
+                            </a>
+                            <a>
+                                <p>热点</p>
+                                <p class="drdEngl">Hot Spot</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="logo" onclick="location.href='index.html';"><img src="img/logo.png"></li>
+            <li style="margin-left:50px">
+                <div class="menu contactD">
+                    <a href="Contact.html">客服中心<i></i></a>
+                    <div class="menu_bd contact">
+                        <div>
+                            <a>
+                                <p>媒体报道</p>
+                                <p class="drdEngl">Media Reports</p>
+                            </a>
+                            <a>
+                                <p>行业资讯</p>
+                                <p class="drdEngl">Industry Information</p>
+                            </a>
+                            <a>
+                                <p>热点</p>
+                                <p class="drdEngl">Hot Spot</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="menu contactD">
+                    <a href="#">电子商城<i></i></a>
+                    <div class="menu_bd contact">
+                        <div>
+                            <a>
+                                <p>天猫旗舰店</p>
+                                <p class="drdEngl">Tmall Flagship Store</p>
+                            </a>
+                            <a>
+                                <p>京东</p>
+                                <p class="drdEngl">JD.COM</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="topHover">
+                <div class="menu aboutD">
+                    <a href="AboutUs.html">关于我们<i></i></a>
+                    <div class="menu_bd about">
+                        <div>
+                            <a>
+                                <p>媒体报道</p>
+                                <p class="drdEngl">Media Reports</p>
+                            </a>
+                            <a>
+                                <p>行业资讯</p>
+                                <p class="drdEngl">Industry Information</p>
+                            </a>
+                            <a>
+                                <p>热点</p>
+                                <p class="drdEngl">Hot Spot</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="menu joinD">
+                    <a href="joinUs.html">加入我们<i></i></a>
+                    <div class="menu_bd join">
+                        <div>
+                            <a>
+                                <p>媒体报道</p>
+                                <p class="drdEngl">Media Reports</p>
+                            </a>
+                            <a>
+                                <p>行业资讯</p>
+                                <p class="drdEngl">Industry Information</p>
+                            </a>
+                            <a>
+                                <p>热点</p>
+                                <p class="drdEngl">Hot Spot</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="upBtn" onclick="$.fn.fullpage.moveTo(1);"></div>
+<div class="nextBottm" onclick="$.fn.fullpage.moveSectionDown();"><img src="img/page2Next.png"></div>
+<div id="fullpage">
+    <div class="section cavaseAll" id="page1">
+        <canvas id="cavas1"></canvas>
+        <canvas id="cavas1t2"></canvas>
+        <div class="cavaseBox">
+            <div class="dogBack"></div>
+            <!--<div class="dogScoop"></div>-->
+            <div class="drinkFont"></div>
+        </div>
+    </div>
+    <div class="section cavaseAllP" id="page1P">
+        <div class="indexPBox">
+            <img class="indexPbackImg" src="img/indexPhone.png">
+            <div class="page1btnBox">
+                <ul>
+                    <li><a href="xihapaopaoP.html">嘻哈泡泡</a></li>
+                    <li><a href="#">电子商城</a></li>
+                    <li><a href="productP.html">产品中心</a></li>
+                    <li><a href="aboutUsP.html">关于我们</a></li>
+                    <li><a href="newsP.html">新闻中心</a></li>
+                    <li><a href="joinUsP.html">加入我们</a></li>
+                    <li><a href="serviceP.html">客服中心</a></li>
+                </ul>
+            </div>
+            <div class="pageIbottom" onclick="$.fn.fullpage.moveTo(3);"></div>
+        </div>
+    </div>
+    <div class="section page2back" id="page2">
+        <canvas id="cavasCercle"></canvas>
+        <div class="shangxia shang"></div>
+        <div class="shangxia shang2"></div>
+        <div class="shangxia xia"></div>
+        <div class="shangxia xia2"></div>
+        <div class="indexleftNav">
+            <ul>
+                <div class="Lihover"></div>
+                <li data-menuanchor="one" class="menuList"><a href="#one">01</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#tow">02</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#three">03</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#four">04</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#five">05</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#six">06</a></li>
+            </ul>
+        </div>
+        <div class="container" style="width: 80%">
+            <div class="row" style="margin-top: 70px;">
+
+                <div class="col-md-4">
+                    <div class="pageLeft">
+                        <div>
+                            <img src="img/xihapaopaoTitle2-1.png" class="xihaTitle">
+                            <img src="img/xihapaopaoTitle2-2.png" width="83%" class="xihaTitle2">
+                        </div>
+                        <!--<img src="img/xihapaopaoTitle2.png">-->
+                        <p>
+                            新闻的分类不仅要按企业的习惯来分类
+                            更要照顾到终端客户感受，按照客户的
+                            习惯来分类，方便客户查询。在网站的
+                            首页新闻的摆放要有层次感，让客户看
+                            到的新闻放置在网站首页，其次放置在
+                            二级页面。<br>
+                            <a href="#" class="konwMore">了解更多</a>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="pageRight">
+                        <div class="pageRightImgbox">
+                            <img src="img/indexxihaHUa2-1.png" class="page2RightBack">
+                            <img src="img/indexxihaHUa2-2.png" class="page2RightBack2">
+                        </div>
+
+                        <div class="listPage">
+                            <div class="indexlistBox">
+                                <a href="#" class="listOne">
+                                    <i class="list1Icon"><span></span></i>
+                                    <div>
+                                        <p class="listTitle">诞生历程</p>
+                                        <p>The birth process</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="listTow">
+                                    <i class="list2Icon"><span></span></i>
+                                    <div>
+                                        <p class="listTitle">形象故事</p>
+                                        <p class="drdEngl">Image story</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="listThr">
+                                    <i class="list3Icon"><span></span></i>
+                                    <div>
+                                        <p class="listTitle">动漫SHOW</p>
+                                        <p class="drdEngl">Anime show</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="listFor">
+                                    <i class="list4Icon"><span></span></i>
+                                    <div style="margin-top: 30px;">
+                                        <p class="listTitle">表情包下载</p>
+                                        <p class="drdEngl">Expression package</p>
+                                        <p class="drdEngl">download</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section page3back" id="page3">
+        <canvas id="cavasCercle3"></canvas>
+        <div class="shangxia shang"></div>
+        <div class="shangxia shang2"></div>
+        <div class="shangxia xia"></div>
+        <div class="shangxia xia2"></div>
+        <div class="indexleftNav">
+            <ul>
+                <div class="Lihover"></div>
+                <li data-menuanchor="one" class="menuList"><a href="#one">01</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#tow">02</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#three">03</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#four">04</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#five">05</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#six">06</a></li>
+            </ul>
+        </div>
+        <div class="page3imgbox">
+
+                <img class="newsGirl" src="img/page3Gilr2-1.png">
+                <img class="newsGirl2" src="img/page3Gilr2-2.png">
+            <div class="mediaBox">
+                <a href="#">
+                    <img src="img/page3-1.png">
+                    <div class="TextBox mediaTextBox">
+                        <p>媒体报道</p>
+                        <p>Media reports</p>
+                    </div>
+                </a>
+            </div>
+            <div class="HotBox">
+                <a href="#">
+                    <img src="img/page3-2.png">
+                    <div class="TextBox HotTextBox">
+                        <p>热点</p>
+                        <p>Hot spot</p>
+                    </div>
+                </a>
+            </div>
+            <div class="infoBox">
+                <a href="#">
+                    <img src="img/page3-3.png">
+                    <div class="TextBox infoTextBox">
+                        <p>行业资讯</p>
+                        <p>Industry information</p>
+                    </div>
+                </a>
+            </div>
+            <div class="babyBox">
+                <a href="#">
+                    <img src="img/page3-4.png">
+                </a>
+            </div>
+        </div>
+       
+    </div>
+    <div class="section page4back" id="page4">
+        <canvas id="cavasCercle4"></canvas>
+        <div class="page4Title"><img src="img/producTitle.png"></div>
+        <div class="indexleftNav">
+            <ul>
+                <div class="Lihover"></div>
+                <li data-menuanchor="one" class="menuList"><a href="#one">01</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#tow">02</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#three">03</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#four">04</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#five">05</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#six">06</a></li>
+            </ul>
+        </div>
+        <div class="page4Scroll">
+            <div class="swiper-container" id="page4swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(./img/page4scroll-5.png);background-size: contain;background-repeat: no-repeat;">
+                        <div class="heihuhu"></div>
+                        <span class="heihuhu2"></span>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(./img/page4scroll-4.png);background-size: contain;background-repeat: no-repeat;">
+                        <div class="guoqianwei"></div>
+                        <span class="guoqianwei2" style="background-size: 36%;"></span>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(./img/page4scroll-1.png);background-size: contain;background-repeat: no-repeat;">
+                        <div class="you"></div>
+                        <span class="you2"></span>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(./img/page4scroll-2.png);background-size: contain;background-repeat: no-repeat;">
+                        <div class="hedongli"></div>
+                        <span class="hedongli2"></span>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(./img/page4scroll-3.png);background-size: contain;background-repeat: no-repeat;">
+                        <div class="mailipian"></div>
+                        <span class="mailipian2" style="background-size: 64%;"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="swipContral">
+                <div class="swiper-button-prev"><img src="img/page2Next.png" class="swipPrev"></div>
+                <div class="swiper-button-next"><img src="img/page2Next.png" class="swipNext"></div>
+            </div>
+            <div class="page4List">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <div>
+                                <p class="page4P">产品介绍</p>
+                                <p>product</p>
+                                <p>description</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <div>
+                                <p class="page4P">分类展示</p>
+                                <p>Product</p>
+                                <p>description</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <div>
+                                <p class="page4P">合作定制</p>
+                                <p>Cooperation</p>
+                                <p>customization</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section page5back" id="page5">
+        <canvas id="cavasCercle5"></canvas>
+        <div class="indexleftNav">
+            <ul>
+                <div class="Lihover"></div>
+                <li data-menuanchor="one" class="menuList"><a href="#one">01</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#tow">02</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#three">03</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#four">04</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#five">05</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#six">06</a></li>
+            </ul>
+        </div>
+        <div class="aboutLogoBox">
+            <img src="img/aboutUstiele.png" class="aboutTitleImg">
+            <div class="aboutLogo">
+                <img src="img/page4HUahua.png">
+            </div>
+            <img class="page5Logo" src="img/page5Logo.png">
+        </div>
+        <div class="circleBox">
+            <div class="cercleImgBox">
+                <img src="img/cercl-1.png" class="circleOne"></img>
+                <img src="img/cercl-2.png" class="circletow"></img>
+                <img src="img/cercl-3.png" class="circleshree"></img>
+            </div>
+            <div class="page5List">
+                <div class="p5infor">
+                    <a href="#">
+                        <i class="leftNavIcon p5icon1"></i>
+                        <div>
+                            <p class="phonText">品牌介绍</p>
+                            <p>brand introduction</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="p5culture webCulter">
+                    <a href="#">
+                        <i class="leftNavIcon p5icon2"></i>
+                        <div>
+                            <p class="phonText">品牌文化</p>
+                            <p>Brand Culture</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="p5culture PhoneCulter">
+                    <a href="#">
+                        <div>
+                            <p class="phonText">品牌文化</p>
+                            <p>Brand Culture</p>
+                        </div>
+                        <i class="leftNavIcon p5icon2"></i>
+                    </a>
+                </div>
+                <div class="p5Profile">
+                    <a href="#">
+                        <i class="rightNavIcon p5icon3"></i>
+                        <div class="P5rightText">
+                            <p  class="phonText">公司介绍</p>
+                            <p>Company Profile</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="p5Intro">
+                    <a href="#">
+                        <i class="rightNavIcon p5icon4"></i>
+                        <div class="P5rightText">
+                            <p class="phonText">形象介绍</p>
+                            <p>Image introduction</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <img src="img/girl-1.png" class="p5giles" style="width: 20%;">
+        </div>
+
+    </div>
+    <div class="section page6back" id="page6">
+        <canvas id="cavasCercle6"></canvas>
+        <div class="indexleftNav">
+            <ul>
+                <div class="Lihover"></div>
+                <li data-menuanchor="one" class="menuList"><a href="#one">01</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#tow">02</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#three">03</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#four">04</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#five">05</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#six">06</a></li>
+            </ul>
+        </div>
+        <div class="malltextBox">
+            <img src="img/page5Title.png" width="30%">
+            <div class="page5Text">
+                <div class="textBox">
+                    <a href="#"><img src="img/tianmao.png"></a>
+                    <a href="#"><img src="img/jindong.png" class="p6img2"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section page7back" id="page7">
+        <canvas id="cavasCercle7"></canvas>
+        <div class="indexleftNav">
+            <ul>
+                <div class="Lihover"></div>
+                <li data-menuanchor="one" class="menuList"><a href="#one">01</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#tow">02</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#three">03</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#four">04</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#five">05</a></li>
+                <span></span>
+                <li data-menuanchor="one" class="menuList"><a href="#six">06</a></li>
+            </ul>
+        </div>
+        <div class="container page7Pc" style="width: 100%;">
+            <div class="row page7Box">
+                <div class="col-md-6">
+                    <div class="page7LeftImg">
+                        <a href="#"><img src="img/jonUs.png"></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="page7RightImg">
+                        <a href="#"><img src="img/servece.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="page7TitleBox">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <div>
+                                <p>招聘</p>
+                                <p>Recruitment</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <div>
+                                <p>加盟</p>
+                                <p>To join</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <div>
+                                <p>合作</p>
+                                <p>Cooperation</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <div>
+                                <p>留言</p>
+                                <p>Leave a message</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <div>
+                                <p>联系我们</p>
+                                <p>Contact us</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page7bottom">
+                <div class="Contentbottom" style="margin-top: 95px;">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="bottomTitle">
+                                <img src="img/weixing.png" class="weixinIcon"><br>
+                                <a href="#">官方微信</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="bottomTitle">
+                                <img src="img/weibo.png" class="weixinIcon"><br>
+                                <a href="#">官方微博</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="bottomTitle">
+                                <img src="img/cart.png" class="weixinIcon"><br>
+                                <a href="#">在线购买</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="bottomTitle">
+                                <img src="img/phone.png" class="weixinIcon"><br>
+                                <a href="#">联系我们</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="page7Phon">
+            <div class="page7ImgBox">
+                <div class="page7PLeftImg page7Img">
+                    <a href="#"><img src="img/jonUs.png"></a>
+                </div>
+                <div class="page7PRightImg page7Img">
+                    <a href="#"><img src="img/servece.png" style="width: 91%;"></a>
+                </div>
+            </div>
+            <div class="page7PTitleBox">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <div>
+                                <p>招聘</p>
+                                <p>Recruitment</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <div>
+                                <p>加盟</p>
+                                <p>To join</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <div>
+                                <p>合作</p>
+                                <p>Cooperation</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i></i>
+                            <div>
+                                <p>留言</p>
+                                <p>Leave a message</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li style="float: right;">
+                        <a href="#">
+                            <i></i>
+                            <div>
+                                <p>联系我们</p>
+                                <p>Contact us</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="page7Pbottom" id="page7bp">
+            <div class="ContentPbottom" style="margin-top: 170px;">
+                <div class="bottomPTitle">
+                    <img src="img/weixing.png" class="weixinIcon"><br>
+                    <a href="#">官方微信</a>
+                </div>
+                <div class="bottomPTitle">
+                    <img src="img/weibo.png" class="weixinIcon"><br>
+                    <a href="#">官方微博</a>
+                </div>
+                <div class="bottomPTitle">
+                    <img src="img/cart.png" class="weixinIcon"><br>
+                    <a href="#">在线购买</a>
+                </div>
+                <div class="bottomPTitle">
+                    <img src="img/phone.png" class="weixinIcon"><br>
+                    <a href="#">联系我们</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottomBox" style="position: absolute">
+            <img src="img/bottom.png">
+        </div>
+        <div class="bottomback"></div>
+    </div>
+</div>
+<script src="js/paopao-2.js"></script>
+<script src="js/paopaot2.js"></script>
+<script src="js/paopao.js"></script>
+<script src="js/slant.js"></script>
+<script src="js/cercle.js"></script>
+<script src="js/index.js"></script>
+<script src="js/commonFunctions.js"></script>
+<script type="text/javascript">
+    var canv1;
+    var canv1t2;
+    var canvC;
+    var canv3;
+    var canv4
+    var canv6;
+    var canv7
+    var canv5;
+
+    var ctx1;
+    var ctx1t2;
+    var ctxC;
+    var ctx3;
+    var ctx4;
+    var ctx6;
+    var ctx7;
+    var ctx5;
+
+    var cavW;
+    var cavH;
+
+    var lastTime;
+    var delTiem;
+
+    var clientH=window.screen.height;
+    var clientW=window.screen.width;
+
+    var cerclw=$('.circleCanvas').width();
+    var cerclh=$('.circleCanvas').height();
+
+    var cercle;
+//    var slant;
+    var paopao2;
+    var paopao;
+    var paopaot2;
+
+    document.body.onload=game();
+    function game(){
+//        init();
+        canvC=document.getElementById('cavasCercle');
+        canv1=document.getElementById('cavas1');
+        canv1t2=document.getElementById('cavas1t2');
+        canv3=document.getElementById('cavasCercle3');
+        canv4=document.getElementById('cavasCercle4');
+        canv5=document.getElementById('cavasCercle5');
+        canv6=document.getElementById('cavasCercle6');
+        canv7=document.getElementById('cavasCercle7');
+//        canv5=document.getElementById('p5circle');
+
+        lastTime=Date.now();
+        delTiem=0;
+        delTiem2=0;
+        browserRedirect();
+//        gameloop();
+
+    }
+    function browserRedirect() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+//                手机
+            var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                grabCursor: true,
+                slidesOffsetBefore:100,
+//                slidesOffsetAfter:160,
+                centeredSlides: true,
+                slidesPerView: '1',
+//                calculateHeight : true,
+//                paginationClickable: true,
+//                initialSlide:2,   //初始化显示第几页
+                loop:true,
+                coverflow: {
+                    rotate: 0,
+                    stretch: 30,
+                    depth: 600,
+                    modifier: 1,
+                    slideShadows : false
+                }
+            });
+            $('.swiper-button-prev').css({
+                'height':'40%',
+                'line-height':'444px',
+                'margin-top':'-35%'
+            });
+            $('.swiper-button-next').css({
+                'height':'40%',
+                'line-height':'444px',
+                'margin-top':'-35%'
+            });
+            $('.page4Scroll img').css({
+                'width':'85%',
+            });
+            $('.swiper-slide').css({
+                'height':'80%',
+            });
+            $('#page4swiper').css({
+                'height':'104%',
+                'padding-left':'11%'
+            });
+
+
+//            $('canvas').hide();
+            $('.top').hide();
+            $('#page1').remove();
+            $('.indexleftNav').hide();
+            $('.page7Pc').hide();
+            $('.webCulter').remove();
+            $('.pageLeft').css({
+                'padding-left':'0px',
+                'margin-top': '0px',
+                'padding-top':'30px',
+                'width':'100%',
+            });
+            $('.pageLeft img').css({
+                'width':'89%',
+            });
+            $('.page2RightBack').css({
+                'width':'161%',
+                'margin-left':'-36%',
+                'margin-top':'-37%',
+            });
+            $('.listPage i').css({
+                'width': '100px',
+                'height': '100px',
+                'background-size': '100px',
+            });
+            $(' .listPage').css({
+                'left': '-9%',
+                'top': '4%',
+            });
+            $(' .listFor').css({
+                'left': '6%',
+                'top': '47%',
+            });
+
+            $('.pageLeft p').css({
+                'width':'100%',
+                'color':'#97621e',
+                'font-size':'28px',
+                'line-height':'52px',
+            });
+            $(".konwMore").hide();
+            $('.newsGirl').css({
+                'width':'88%',
+                'left':'10%'
+            });
+            $('.newsGirl2').css({
+                'width':'47%',
+                'left':'35%'
+            });
+            $('.HotBox').css({
+                'top':'65%',
+                'left':'-24%',
+            });
+
+            $('.page3imgbox div img').css({
+                'width':'97%',
+            });
+            $('.mediaBox').css({
+                'top':'17%',
+                'left':'3%'
+            });
+            $('.infoBox').css({
+                'top':'0px',
+            });
+            $('.babyBox').css({
+                'top':'70%',
+                'right':'6%'
+            });
+            $('.page4Title img').css({
+                'width':'54%',
+            });
+            $('.page4Scroll').css({
+                'width':'90%',
+                'top':'15%',
+                'margin-left':'-45%'
+            });
+            $('.page4List').css({
+                'margin-top':'100px',
+            });
+            $('.page5back').css({
+//                'background-position-x':'-480px',
+                'background-position-y':'0px'
+            });
+            $('.aboutLogo img').css({
+                'width':'80%',
+            });
+            $('.aboutLogoBox').css({
+                'width':'100%',
+                'top':'5%',
+                'left':'0px'
+            });
+            $('.aboutTitleImg').css({
+                'width':'70%',
+                'margin-left':'0',
+                'left':'0px'
+            });
+            $('.aboutLogo').css({
+                'margin-top':'11%',
+            });
+            $('.page5Logo').css({
+                'width':'42%',
+                'margin-left':'-13%',
+                'top':'61%'
+            });
+            $('.circleBox').css({
+                'left':'0%',
+                'top':'18%'
+            });
+            $('.cercleImgBox img').css({
+                'width':'100%',
+                'margin-left':'3%',
+                'margin-top':'12%'
+            });
+            $('.p5giles').css({
+                'width':'41%',
+                'top':'34%',
+                'left':'63%'
+            });
+            $('.page5List i ,.page4List ul li i').css({
+                'width':'100px',
+                'height':'100px',
+                'background-size':'100px',
+            });
+            $('.page5List i').css({
+                'position':'absolute',
+            });
+            $('.p5infor').css({
+                'top':'15%',
+                'left':'72%'
+            });
+            $('.p5culture').css({
+                'top':'11%',
+                'left':'22%'
+            });
+            $('.p5Profile').css({
+                'left':'12%',
+                'top':'39%',
+            });
+
+            $('.p5Intro').css({
+                'left':'44%',
+                'top':'56%',
+            });
+            $('.p5Intro a div').removeClass("P5rightText");
+            $('.p5Profile a div').removeClass("P5rightText");
+            $('.phonText').css({
+                'font-size':'41px',
+            });
+            $('.malltextBox').css({
+                'top':'10%',
+            });
+            $('.malltextBox img').css({
+                'width':'60%',
+            });
+            $('.page5Text').css({
+                'width':'93%',
+                'margin-left':'-49%',
+                'margin-top': '200px'
+            });
+            $('.textBox').css({
+                'top':'14%',
+                'margin-left':'-1%'
+            });
+            $('.listTow').css({
+                'margin-top': '50px'
+            });
+            $('.listThr').css({
+                'margin-top': '77px'
+            });
+            $('.listFor').css({
+                'margin-left':'9px',
+                'margin-top': '30px'
+            });
+            $('.listTitle').css({
+                'font-size':'33px',
+                'color': '#603912',
+                'margin-bottom':'0px',
+            });
+            $('.drdEngl').css({
+                'font-size':'26px',
+                'margin-bottom':'0px',
+            });
+
+//            $('#page4swiper .swiper-slide-active').css({
+//                'width':'400px'
+//            });
+            $('.page4P').css({
+                'font-size':'27px',
+            });
+
+            $('.page5List div a div p').css({
+                'font-size':'25px'
+            });
+            $('.page5List div a div').css({
+                'margin-top':'120px'
+            });
+            $('.shangxia').css({
+                'width':'15%',
+                'height':'15%'
+            });
+
+            init1();
+            gameloop1();
+        } else {
+
+//                  网页
+            var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                slidesPerView: '3',
+                paginationClickable: true,
+                initialSlide:2,   //初始化显示第几页
+                loop:true,
+                coverflow: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 400,
+                    modifier: 1,
+                    slideShadows : false
+                },
+                onSlideChangeEnd: function(swipers){
+                    var hideDom=$('.swiper-slide-active').prev().prev().prev();
+                    var hideDom2=$('.swiper-slide-active').next().next().next();
+                    $(hideDom).css("opacity","0").siblings().css("opacity","1");
+                    $(hideDom2).css("opacity","0").siblings().css("opacity","1");
+                    $(hideDom).css("opacity","0")
+                }
+            });
+            $('.page7Pbottom').hide();
+            $('.page7Phon').hide();
+            $('#page1P').remove();
+            $('.PhoneCulter').remove();
+            $('.swiper-button-prev').css({
+                'margin-top':'-138px',
+                'left':'-35px'
+            });
+            $('.swiper-button-next').css({
+                'margin-top':'-138px',
+                'right':'-19px'
+            });
+            $('.infoBox img').css({
+                'width':'85%',
+            });
+
+            init2();
+            gameloop2();
+
+        }
+    }
+
+
+    function init1(){
+        ctxC=canvC.getContext('2d');
+        ctx1=canv1.getContext('2d');
+        ctx1t2=canv1t2.getContext('2d');
+        ctx3=canv3.getContext('2d');
+        ctx4=canv4.getContext('2d');
+        ctx6=canv6.getContext('2d');
+        ctx7=canv7.getContext('2d');
+        ctx5=canv5.getContext('2d');
+
+        canvC.height = 3*clientH;
+        canvC.width = 3*clientW;
+//        canv1.height = 3*clientH;
+//        canv1.width = 3*clientW;
+//        canv1.height = 3*clientH;
+//        canv1.width = 3*clientW;
+        canv3.height = 3*clientH;
+        canv3.width = 3*clientW;
+        canv4.height = 3*clientH;
+        canv4.width = 3*clientW;
+        canv6.height = 3*clientH;
+        canv6.width = 3*clientW;
+        canv7.height = 3*clientH*7/6;
+        canv7.width = 3*clientW;
+        canv5.height = 3*clientH;
+        canv5.width = 3*clientW;
+
+        cavW=1100;
+        cavH=2000;
+
+        cercle=new cercleObj();
+        cercle.init();
+
+//        slant=new slantObj();
+//        slant.init();
+
+        paopao2=new paopao2Obj();
+        paopao2.init();
+        paopao=new paopaoObj();
+        paopao.init();
+        paopaot2=new paopaot2Obj();
+        paopaot2.init();
+
+    }
+    function init2(){
+        ctxC=canvC.getContext('2d');
+        ctx1=canv1.getContext('2d');
+        ctx1t2=canv1t2.getContext('2d');
+        ctx3=canv3.getContext('2d');
+        ctx4=canv4.getContext('2d');
+        ctx6=canv6.getContext('2d');
+        ctx7=canv7.getContext('2d');
+        ctx5=canv5.getContext('2d');
+
+        canvC.height = clientH*6/5;
+        canvC.width = clientW*6/5;
+        canv1.height = clientH;
+        canv1.width = clientW;
+        canv1t2.height = clientH;
+        canv1t2.width = clientW;
+        canv3.height = clientH*6/5;
+        canv3.width = clientW*6/5;
+        canv4.height = clientH;
+        canv4.width = clientW;
+        canv6.height = clientH;
+        canv6.width = clientW;
+        canv7.height = clientH*5/4;
+        canv7.width = clientW;
+        canv5.height = clientH*6/5;
+        canv5.width = clientW*6/5;
+
+        cavW=canvC.width;
+        cavH=canvC.height;
+
+        cercle=new cercleObj();
+        cercle.init();
+
+//        slant=new slantObj();
+//        slant.init();
+
+        paopao2=new paopao2Obj();
+        paopao2.init();
+
+        paopao=new paopaoObj();
+        paopao.init();
+        paopaot2=new paopaot2Obj();
+        paopaot2.init();
+
+    }
+
+    function gameloop1(){
+        window.requestAnimationFrame(gameloop1);
+        ctxC.clearRect(0,0,cavW,cavH);
+        ctx1.clearRect(0,0,cavW,cavH);
+        ctx1t2.clearRect(0,0,cavW,cavH);
+        ctx3.clearRect(0,0,cavW,cavH);
+        ctx4.clearRect(0,0,cavW,cavH);
+        ctx6.clearRect(0,0,cavW,cavH);
+        ctx7.clearRect(0,0,cavW,cavH);
+        ctx5.clearRect(0,0,cavW,cavH);
+
+        var now=Date.now();
+        delTiem=now-lastTime;
+        lastTime=now;
+
+        cercle.draw(ctx3,241,90,37);
+        cercle.draw(ctxC,252,226,142);
+        cercle.draw(ctx5,239,89,36);
+//        slant.draw(ctx3);
+//        slant.draw(ctxC);
+
+        paopao2Monitor();
+
+        paopao2.draw(ctx4,213,224,164,80);
+        paopao2.draw(ctx6,248,191,84,80);
+        paopao2.draw(ctx7,254,231,161,80);
+
+        paopaoMonitor();
+        paopao.draw(ctx1,255,202,73,80);
+        paopaoMonitort2();
+        paopaot2.draw(ctx1t2,255,202,73,80);
+    }
+    function gameloop2(){
+        window.requestAnimationFrame(gameloop2);
+        ctxC.clearRect(0,0,cavW,cavH);
+        ctx1.clearRect(0,0,cavW,cavH);
+        ctx1t2.clearRect(0,0,cavW,cavH);
+        ctx3.clearRect(0,0,cavW,cavH);
+        ctx4.clearRect(0,0,cavW,cavH);
+        ctx6.clearRect(0,0,cavW,cavH);
+        ctx7.clearRect(0,0,cavW,cavH);
+        ctx5.clearRect(0,0,cavW,cavH);
+
+        var now=Date.now();
+        delTiem=now-lastTime;
+        lastTime=now;
+
+        cercle.draw(ctx3,241,90,37);
+        cercle.draw(ctxC,252,226,142);
+        cercle.draw(ctx5,239,89,36);
+//        slantMonitor();
+//        slant.draw(ctx3);
+//        slant.draw(ctxC);
+
+        paopao2Monitor();
+        paopao2.draw(ctx4,213,224,164,100);
+        paopao2.draw(ctx6,248,191,84,100);
+        paopao2.draw(ctx7,254,231,161,100);
+
+        paopaoMonitor();
+        paopao.draw(ctx1,255,202,73,120);
+        paopaoMonitort2();
+        paopaot2.draw(ctx1t2,255,202,73,80);
+
+    }
+
+
+</script>
+</body>
+</html>

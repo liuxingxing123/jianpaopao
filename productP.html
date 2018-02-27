@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/phoneStyle.css" rel="stylesheet">
+
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-3.4.2.min.js"></script>
+    <style>
+        .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+            background: linear-gradient(to right, #d8dfab , #d8dfab,#d8dfab);
+        }
+    </style>
+</head>
+<body class="Pback">
+    <div class="top">
+        <div class="leftTitle"><img src="img/PhonImg/productTitle.png"></div>
+        <div class="rightAnimal productAnimal "><img src="img/PhonImg/animal3.png"></div>
+    </div>
+    <div class="Ptitle">
+        <ul id="myTab" class="nav nav-tabs tabBox productTab">
+            <li class="active">
+                <a href="#born" data-toggle="tab">
+                    <p>产品介绍</p>
+                    <p>Product description</p>
+                </a>
+            </li>
+            <li>
+                <a href="#image" data-toggle="tab">
+                    <p>分类展示</p>
+                    <p>Classified dispaly</p>
+                </a>
+            </li>
+            <li>
+                <a href="#cartoon" data-toggle="tab">
+                    <p>合作定制</p>
+                    <p>Cooperation customization</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+<div class="textBox">
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="born">
+            <div class="BorntextBox">
+                <div class="productText">
+                    <img src="img/PhonImg/contactImg.png">
+                    <div class="productDes">
+                        <p>
+                            说起近代动画的先驱者，不得不首先提到17世纪的耶稣会教士阿塔纳斯·珂雪（Athanasius kircher）。1640年，珂雪发明了“魔术幻灯”（The Magic Lantern）。
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="productScroll">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(img/p1.png);"></div>
+                        <div class="swiper-slide" style="background-image:url(img/p2.png);"></div>
+                        <div class="swiper-slide" style="background-image:url(img/p3.png);"></div>
+                        <div class="swiper-slide" style="background-image:url(img/p4.png);"></div>
+                        <div class="swiper-slide" style="background-image:url(img/p5.png);"></div>
+                    </div>
+                </div>
+                <div class="btnBox">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="scrollBtnBox">
+                <div class="scrollbtnmain">
+                    <i class="leftIcon"></i>
+                    <i class="rightIcon"></i>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="image">
+            <p>形象故事2</p>
+        </div>
+        <div class="tab-pane fade" id="cartoon">
+
+        </div>
+    </div>
+</div>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            slidesPerView: 4,
+            paginationClickable: true,
+            initialSlide:2,
+            loop:true,
+            coverflow: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows : false
+            }
+        });
+    </script>
+</body>
+</html>
